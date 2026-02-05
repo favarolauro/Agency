@@ -5,9 +5,9 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
-  background: #0f0f0f;
-  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
   line-height: 1.6;
 }
 
@@ -17,11 +17,11 @@ body {
   padding: 40px 20px;
 }
 
-.header {
+header {
   border-bottom: 1px solid #222;
 }
 
-.header .container {
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,6 +36,7 @@ nav a {
   margin-left: 30px;
   text-decoration: none;
   color: #aaa;
+  font-weight: 500;
 }
 
 nav a:hover {
@@ -44,6 +45,7 @@ nav a:hover {
 
 .hero {
   padding: 120px 0;
+  text-align: center;
 }
 
 .hero h1 {
@@ -64,15 +66,23 @@ nav a:hover {
   border: 1px solid #fff;
   color: #fff;
   text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #0f0f0f;
 }
 
 .services {
   background: #141414;
+  padding: 80px 0;
 }
 
 .services h2 {
   font-size: 36px;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .grid {
@@ -84,10 +94,16 @@ nav a:hover {
 .card {
   border: 1px solid #222;
   padding: 30px;
+  transition: transform 0.3s;
 }
 
-.footer {
+.card:hover {
+  transform: translateY(-5px);
+}
+
+footer {
   border-top: 1px solid #222;
   text-align: center;
   color: #777;
+  padding: 40px 0;
 }
